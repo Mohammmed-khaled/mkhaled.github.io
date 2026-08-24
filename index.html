@@ -655,30 +655,12 @@
 
     <div class="container">
         <div class="row">
-
         <!-- Contact Form -->
         <div class="col-lg-8">
             <div class="contact-form-card">
                 <h4 class="contact-title">Send a message</h4>
 
-                <form
-                    id="contact-form"
-                    action="https://formsubmit.co/mohammed.a.m.khaled@gmail.com"
-                    method="POST">
-
-                    <!-- Email subject -->
-                    <input
-                        type="hidden"
-                        name="_subject"
-                        value="New message from your personal website">
-
-                    <!-- Spam protection -->
-                    <input
-                        type="text"
-                        name="_honey"
-                        style="display: none;">
-
-                    <!-- Name -->
+                <form id="contact-form">
                     <div class="form-group">
                         <input
                             class="form-control"
@@ -688,7 +670,6 @@
                             required>
                     </div>
 
-                    <!-- Email -->
                     <div class="form-group">
                         <input
                             class="form-control"
@@ -698,7 +679,6 @@
                             required>
                     </div>
 
-                    <!-- Message -->
                     <div class="form-group">
                         <textarea
                             class="form-control"
@@ -708,15 +688,16 @@
                             required></textarea>
                     </div>
 
-                    <!-- Submit -->
                     <div class="form-group">
                         <button
+                            id="submit-button"
                             type="submit"
                             class="btn btn-primary form-control">
                             Send Message
                         </button>
                     </div>
 
+                    <p id="form-status" aria-live="polite"></p>
                 </form>
             </div>
         </div>
