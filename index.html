@@ -651,51 +651,75 @@
 <div class="section contact" id="contact">
 
     <!-- Gray background instead of Google Maps -->
-    <div class="map" style="background-color: #e0e0e0;"></div>
+    <div class="map" style="background-color: #e0e0e0; height: 400px;"></div>
 
     <div class="container">
         <div class="row">
 
-            <!-- Contact Form -->
-            <div class="col-lg-8">
-                <div class="contact-form-card">
-                    <h4 class="contact-title">Send a message</h4>
+        <!-- Contact Form -->
+        <div class="col-lg-8">
+            <div class="contact-form-card">
+                <h4 class="contact-title">Send a message</h4>
 
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input class="form-control"
-                                   type="text"
-                                   name="name"
-                                   placeholder="Name *"
-                                   required>
-                        </div>
+                <form
+                    id="contact-form"
+                    action="https://formsubmit.co/mohammed.a.m.khaled@gmail.com"
+                    method="POST">
 
-                        <div class="form-group">
-                            <input class="form-control"
-                                   type="email"
-                                   name="email"
-                                   placeholder="Email *"
-                                   required>
-                        </div>
+                    <!-- Email subject -->
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New message from your personal website">
 
-                        <div class="form-group">
-                            <textarea class="form-control"
-                                      name="message"
-                                      placeholder="Message *"
-                                      rows="7"
-                                      required></textarea>
-                        </div>
+                    <!-- Spam protection -->
+                    <input
+                        type="text"
+                        name="_honey"
+                        style="display: none;">
 
-                        <div class="form-group">
-                            <button type="submit"
-                                    class="btn btn-primary form-control">
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                    <!-- Name -->
+                    <div class="form-group">
+                        <input
+                            class="form-control"
+                            type="text"
+                            name="name"
+                            placeholder="Name *"
+                            required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <input
+                            class="form-control"
+                            type="email"
+                            name="email"
+                            placeholder="Email *"
+                            required>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <textarea
+                            class="form-control"
+                            name="message"
+                            placeholder="Message *"
+                            rows="7"
+                            required></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="form-group">
+                        <button
+                            type="submit"
+                            class="btn btn-primary form-control">
+                            Send Message
+                        </button>
+                    </div>
+
+                </form>
             </div>
-
+        </div>
             <!-- Contact Information -->
             <div class="col-lg-4">
                 <div class="contact-info-card">
