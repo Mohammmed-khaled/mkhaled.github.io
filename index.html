@@ -660,7 +660,15 @@
             <div class="contact-form-card">
                 <h4 class="contact-title">Send a message</h4>
 
-                <form id="contact-form">
+                <form
+                    action="https://formsubmit.co/mohammed.a.m.khaled@gmail.com"
+                    method="POST">
+
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New message from Mohammed Khaled's website">
+
                     <div class="form-group">
                         <input
                             class="form-control"
@@ -690,14 +698,12 @@
 
                     <div class="form-group">
                         <button
-                            id="submit-button"
                             type="submit"
                             class="btn btn-primary form-control">
                             Send Message
                         </button>
                     </div>
 
-                    <p id="form-status" aria-live="polite"></p>
                 </form>
             </div>
         </div>
@@ -806,7 +812,7 @@
 <script src="assets/js/johndoe.js"></script>
 
 <!-- Custom JavaScript -->
-<script src="index.js"></script>
+<!-- <script src="index.js"></script> -->
 
 </body>
 </html>
