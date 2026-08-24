@@ -22,3 +22,22 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     })
     .catch((err) => console.log('Error:', err));
 });
+
+
+function initMap() {
+    const mainz = {
+        lat: 49.9929,
+        lng: 8.2473
+    };
+
+    const map = new google.maps.Map(document.getElementById("map"), {
+        center: mainz,
+        zoom: 12
+    });
+
+    new google.maps.Marker({
+        position: mainz,
+        map: map,
+        title: "Mainz, Germany"
+    });
+}
